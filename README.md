@@ -21,3 +21,10 @@ WHEN I click on the images of the applications\
 THEN I am taken to that deployed application\
 WHEN I resize the page or view the site on various screens and devices\
 THEN I am presented with a responsive layout that adapts to my viewport\
+
+
+
+
+
+
+https://pbs.twimg.com/profile_images/1487479147609812994/oYJ9NS7P_400x400.jpg
