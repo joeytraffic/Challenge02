@@ -12,10 +12,10 @@
         <h1>Joseph</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
-                <li><a href="#">Resume</a></li>
+                <li class="nav-link"><a href="#">About Me</a></li>
+                <li class="nav-link"><a href="#">Work</a></li>
+                <li class="nav-link"><a href="#">Contact Me</a></li>
+                <li class="nav-link"><a href="#">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
 
     <main>
         <aside>
-            <h2>About Me</h2>
+            <h2 class="side-header">About Me</h2>
         </aside>
 
         <section>
@@ -46,17 +46,48 @@
                 </p>
             </article>
         </section>
+
     </main>
+
+    <span class="spacing-for-line">
+        <hr class="not-line">
+        <hr class="the-line">
+    </span>
+
+    <div>
+        <aside>
+            <h2>Work</h2>
+        </aside>
+
+        <section class="work">
+            <div class="card-big">
+                <header>To Monsoon</header>
+                <img src="https://m.media-amazon.com/images/I/31K3iQvCctL._UXNaN_FMjpg_QL85_.jpg" alt="To Monsoon album cover by Joey Tranvik" />
+            </div>
+            <div class="card">
+                <header>Coming soon...</header>
+            </div>
+            <div class="card">
+                <header>Coming soon...</header>
+            </div>
+            <div class="card">
+                <header>Coming soon...</header>
+            </div>
+            <div class="card">
+                <header>Coming soon...</header>
+            </div>
+        </section>
+    </div>
 
     <footer class="footer">
         <h2>Contact</h2>
-        <nav>
+        <nav class="footer-nav">
             <ul>
-                <li><a href="#">(320)555-1528</a></li>
-                <li><a href="#">joey.tranvik@gmail.com</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Spotify</a></li>
+                <li class="contact-link"><a href="tell:3205551528">(320)555-1528</a></li> <!-- not my real phone number -->
+                <li class="contact-link"><a href="mailto:joey.tranvik@gmail.com">joey.tranvik@gmail.com</a></li>
+                <li class="contact-link"><a href="https://github.com/joeytraffic">GitHub</a></li>
+                <li class="contact-link"><a href="https://twitter.com/joeytraffic">Twitter</a></li>
+                <li class="contact-link"><a href="https://open.spotify.com/artist/0EwxM1Pv0584OF4jZsG8TI">Spotify</a></li>
             </ul>
         </nav>
     </footer>
