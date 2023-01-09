@@ -70,14 +70,33 @@ nav ul {
     color: #c6c6c6;
 }
 
-.before-article {
+/* .background-image {
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+
+} */
+
+
+.before-article div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #5d5d5d;
+    background-image: url("https://images.unsplash.com/photo-1598653222000-6b7b7a552625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70%;
 }
+@media screen and (max-width: 1504px) {
+    .before-article div {
+        background-image: none;
+    }
+}
+
+/* background-image: url("https://images.unsplash.com/photo-1598653222000-6b7b7a552625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");  */
 
 section img {
     margin-left: 30px;
@@ -95,7 +114,10 @@ section h2 {
     justify-content: flex-end;
     font-size: 40px;
     padding-right: 100px;
+    padding-left: 100px;
     color: #5d5d5d;
+    text-shadow: rgb(255, 255, 255) 3px 0 20px;
+    /* background-color: #cccccc; */
 }
 
 span {
@@ -183,31 +205,73 @@ body div section {
     flex-wrap: wrap;
 }
 
-.card-big {
-    flex: 4;
+div header {
+        display: flex;
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #5d5d5d;
+        color: #c6c6c6;
+}
+
+/* .card-big {
+    flex: 1;
     font-size: 40px;
     border-style: solid;
     border-width: 1px;
+    max-width: 700px;
     padding: 10px;
     margin: 20px;
-}
+} */
 
-.card-big header {
+/* .card-big header {
     text-align: center;
     justify-content: center;
     padding: 20px;
-}
+} */
 
-.card header {
-    text-align: center;
-}
-
-.card {
+/* .card-group {
     flex: 1;
+    font-size: 40px;
     border-style: solid;
+    flex-wrap: wrap;
     border-width: 1px;
     padding: 10px;
     margin: 20px;
+} */
+
+.card header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.smaller {
+    font-size: 20px;
+}
+
+/* img {
+    max-width: 70%;
+} */
+
+.card {
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.card-image {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    max-width: 100%;
 }
 
 footer {
@@ -230,15 +294,31 @@ footer h2 {
     font-size: 40px;
 }
 
-.footer-nav {
-    flex: 3;
-    justify-content: space-between;
+footer nav ul li {
+    padding: 20px;
+    justify-content: flex-end;
 }
 
 
 
+/* This was to fix some wonky spacing in the footer before the screen changed at 768px. */
 
-/* I simply liked the 768px we used in class. */
+@media screen and (max-width: 983px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+/* This was to fix the phone number looking bad between 767 and 802px */
+
+@media screen and (max-width: 802px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* I simply liked the 768px we used in class... and it worked out for the header spacing. */
 
 @media screen and (max-width: 768px) {
     main,
@@ -248,16 +328,15 @@ footer h2 {
     }
     header h1 {
         padding-left: 0px;
-        padding: 10px;
-    }
-    nav ul {
-        flex-direction: column;
-        text-align: center;
+        padding: 15px;
     }
 
-    footer {
-        flex-direction: column;
+
+    nav ul li {
+        padding: 5px;
     }
+
+
     footer nav {
         padding: 20px;
     }
