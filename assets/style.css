@@ -76,6 +76,7 @@ nav ul {
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #5d5d5d;
 }
 
 section img {
@@ -94,6 +95,7 @@ section h2 {
     justify-content: flex-end;
     font-size: 40px;
     padding-right: 100px;
+    color: #5d5d5d;
 }
 
 span {
@@ -135,6 +137,7 @@ main aside h2 {
     justify-content: flex-end;
     padding-right: 20px;
     font-size: 35px;
+    color: #5d5d5d;
 }
 
 main section {
@@ -143,6 +146,7 @@ main section {
     font-size: 25px;
     padding-right: 30px;
     line-height: 1.5;
+    color: #5d5d5d;
 }
 
 body div {
@@ -155,12 +159,14 @@ body div {
 body div aside {
     flex: 2;
     padding: 20px;
+    
 }
 
 body div aside h2 {
     justify-content: flex-end;
     padding-right: 20px;
     font-size: 35px;
+    color: #5d5d5d;
 }
 
 body div section {
@@ -206,10 +212,11 @@ body div section {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    bottom: 0;
     width:100%;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     background: #5d5d5d;
@@ -224,6 +231,7 @@ footer h2 {
 }
 
 .footer-nav {
+    flex: 3;
     justify-content: space-between;
 }
 
