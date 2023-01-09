@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 a:link {
     text-decoration: none;
 }
@@ -71,12 +72,10 @@ nav ul {
 
 .before-article {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* background-color: ; */
 }
 
 section img {
@@ -176,8 +175,6 @@ body div section {
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-evenly; */
-    /* align-items: flex-start; */
 }
 
 .card-big {
@@ -213,7 +210,6 @@ footer {
     bottom: 0;
     width:100%;
     flex-direction: row;
-    /* justify-content: space-around; */
     align-items: center;
     padding: 20px;
     background: #5d5d5d;
@@ -234,5 +230,31 @@ footer h2 {
 
 
 
+/* I simply liked the 768px we used in class. */
 
+@media screen and (max-width: 768px) {
+    main,
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        padding-left: 0px;
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    footer {
+        flex-direction: column;
+    }
+    footer nav {
+        padding: 20px;
+    }
+
+    footer nav ul {
+        padding: 5px;
+    }
+}
