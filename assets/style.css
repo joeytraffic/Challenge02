@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     font-family: Arial;
     margin: 0;
-    background-color: #e3e3e3;
+    background-color: #5d5d5d; 
 }
 
 nav {
@@ -85,16 +85,14 @@ nav ul {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #5d5d5d;
+    background-color: #e3e3e3; 
     background-image: url("https://images.unsplash.com/photo-1598653222000-6b7b7a552625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 70%;
 }
-@media screen and (max-width: 1504px) {
-    .before-article div {
-        background-image: none;
-    }
-}
+
+
 
 /* background-image: url("https://images.unsplash.com/photo-1598653222000-6b7b7a552625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");  */
 
@@ -122,22 +120,26 @@ section h2 {
 
 span {
     display: flex;
+    background-color: #e3e3e3; 
     flex-direction: row ;
 }
 
 .spacing-for-line {
     padding-top: 30px;
+    background-color: #e3e3e3; 
     padding-bottom: 30px;
 }
 
 .not-line {
     flex: 2;
     border: 2px solid #e3e3e3;
+    background-color: #e3e3e3; 
 }
 
 .the-line {
     flex: 5;
     border: 2px solid #5d5d5d;
+    background-color: #e3e3e3; 
 }
 
 
@@ -147,12 +149,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: #e3e3e3; 
 
 }
 
 main aside {
     flex: 2;
     padding: 20px;
+    background-color: #e3e3e3; 
 }
 
 main aside h2 {
@@ -169,12 +173,14 @@ main section {
     padding-right: 30px;
     line-height: 1.5;
     color: #5d5d5d;
+    background-color: #e3e3e3; 
 }
 
 body div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: #e3e3e3; 
 
 }
 
@@ -301,6 +307,13 @@ footer nav ul li {
 
 
 
+
+@media screen and (max-width: 1504px) {
+    .before-article div {
+        background-image: none;
+    }
+} 
+
 /* This was to fix some wonky spacing in the footer before the screen changed at 768px. */
 
 @media screen and (max-width: 983px) {
@@ -309,23 +322,23 @@ footer nav ul li {
     }
 }
 
-/* This was to fix the phone number looking bad between 767 and 802px */
+
+
+/* Turns everything into columns */
 
 @media screen and (max-width: 802px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 
-/* I simply liked the 768px we used in class... and it worked out for the header spacing. */
 
-@media screen and (max-width: 768px) {
-    main,
     header{
         flex-direction: column;
         text-align: center;
     }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
     header h1 {
         padding-left: 0px;
         padding: 15px;
@@ -336,6 +349,10 @@ footer nav ul li {
         padding: 5px;
     }
 
+    .before-article div {
+        flex-direction: column;
+        align-items: center;
+    }
 
     footer nav {
         padding: 20px;
