@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     font-family: Arial;
     margin: 0;
-    background-color: #5d5d5d; 
+    background-color: #5d5d5d;
 }
 
 nav {
@@ -52,7 +52,7 @@ header h1 {
 }
 
 .nav-link a:hover {
-    text-shadow: 2px 2px hsla(0, 0%, 20%, 0.611);
+    text-shadow: 2px 2px hsla(0, 0%, 13%, 0.611);
 }
 
 .contact-link a {
@@ -79,7 +79,7 @@ nav ul {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #5d5d5d;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
     background-image: url("https://images.unsplash.com/photo-1598653222000-6b7b7a552625?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
     background-repeat: no-repeat;
     background-position: right;
@@ -91,6 +91,7 @@ nav ul {
 section img {
     margin-left: 30px;
 }
+
 .profile-picture {
     flex: 2;
     border-radius: 200px;
@@ -105,32 +106,32 @@ section h2 {
     font-size: 40px;
     padding-right: 100px;
     padding-left: 100px;
-    color: #5d5d5d;
+    color: #242424;
     text-shadow: rgb(255, 255, 255) 3px 0 20px;
 }
 
 span {
     display: flex;
-    background-color: #e3e3e3; 
-    flex-direction: row ;
+    background-color: #e3e3e3;
+    flex-direction: row;
 }
 
 .spacing-for-line {
     padding-top: 30px;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
     padding-bottom: 30px;
 }
 
 .not-line {
     flex: 2;
     border: 2px solid #e3e3e3;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
 }
 
 .the-line {
     flex: 5;
     border: 2px solid #5d5d5d;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
 }
 
 
@@ -140,14 +141,14 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
 
 }
 
 main aside {
     flex: 2;
     padding: 20px;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
 }
 
 main aside h2 {
@@ -164,21 +165,21 @@ main section {
     padding-right: 30px;
     line-height: 1.5;
     color: #5d5d5d;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
 }
 
 body div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: #e3e3e3; 
+    background-color: #e3e3e3;
 
 }
 
 body div aside {
     flex: 2;
     padding: 20px;
-    
+
 }
 
 
@@ -202,17 +203,16 @@ body div section {
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 div header {
-        display: flex;
-        /* flex-direction: row; */
-        /* flex-wrap: wrap; */
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background: #5d5d5d;
-        color: #c6c6c6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #5d5d5d;
+    color: #c6c6c6;
 }
 
 
@@ -226,7 +226,7 @@ div header {
     font-size: 20px;
 }
 
-@media  screen and (max-width: 1091px) {
+@media screen and (max-width: 1091px) {
     main {
         flex-direction: column;
         align-items: center;
@@ -239,17 +239,36 @@ div header {
         align-items: center;
         justify-content: center;
     }
+
     body div section {
         align-items: center;
         padding-right: 0px;
         justify-content: center;
     }
+
     body div aside h2 {
         justify-content: center;
         padding-right: 0px;
     }
 }
 
+.featured-card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    padding: 10px;
+    margin: 20px;
+}
+.featured-card header {
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
 
 .card {
     display: flex;
@@ -276,7 +295,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    width:100%;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -304,7 +323,12 @@ footer nav ul li {
     .before-article div {
         background-image: none;
     }
-} 
+
+    section h2 {
+        color: #5d5d5d;
+        text-shadow: none;
+    }
+}
 
 /* This was to fix some wonky spacing in the footer before the screen changed at 768px. */
 
@@ -321,7 +345,7 @@ footer nav ul li {
 @media screen and (max-width: 802px) {
 
 
-    header{
+    header {
         flex-direction: column;
         text-align: center;
     }
